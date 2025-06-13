@@ -60,7 +60,7 @@ npm run dev
 ```
 ## 🎥 Demo en video
 
-[Haz clic aquí para ver el video demo](./VIDEO_DEMO.mp4)
+[Haz clic aquí para ir al archivo de video demo](./VIDEO_DEMO.mp4)
 
 ```
 
