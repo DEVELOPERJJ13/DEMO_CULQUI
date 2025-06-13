@@ -57,7 +57,7 @@ MONGODB_URI=mongodb://root:example@mongo:27017/
 Inicia el servidor en modo desarrollo:
 ```bash
 npm run dev
-
+```
 ## 🎥 Demo en video
 
 [Haz clic aquí para ver el video demo](./VIDEO_DEMO.mp4)
