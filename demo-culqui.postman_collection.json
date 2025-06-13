@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "ab27fa60-2f0a-4108-a5d9-2b98c6c94c45",
+		"name": "Demo culqui",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28052099"
+	},
+	"item": [
+		{
+			"name": "Create token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "pk_test_LsRBKejzCOEEWOsw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"card_number\": 4480129803815123,\r\n  \"cvv\": 123,\r\n  \"expiration_month\": \"12\",\r\n  \"expiration_year\": \"2027\",\r\n  \"email\": \"test@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/tokens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tokens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get card details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "pk_test_LsRBKejzCOEEWOsw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/tokens/ncDD84968cghaen8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tokens",
+						"ncDD84968cghaen8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
